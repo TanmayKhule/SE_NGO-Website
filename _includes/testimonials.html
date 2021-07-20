@@ -1,0 +1,40 @@
+<section class="content">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+
+
+          <div id="testimonial-slide" class="testimonial-slide">
+            {% for item in site.data.testimonials %}
+            <div class="item">
+              <div class="quote-item">
+                <span class="quote-text">
+                  {{item.comment}}
+                </span>
+
+                <div class="quote-item-footer">
+                  <img loading="lazy" class="testimonial-thumb" src="/assets/images/clients/testimonial1.png"
+                    alt="testimonial">
+                  <div class="quote-item-info">
+                    <h3 class="quote-author">{{item.name}}</h3>
+                    <span class="quote-subtext">{{item.designation}}</span>
+                  </div>
+                </div>
+              </div><!-- Quote item end -->
+            </div>
+            <!--/ Item 1 end -->
+            {% endfor %}
+          </div>
+          <!--/ Testimonial carousel end-->
+        </div><!-- Col end -->
+
+        <!-- Col end -->
+
+      </div>
+
+      <!--/ Content row end -->
+    </div>
+    <!--/ Container end -->
+  </section>

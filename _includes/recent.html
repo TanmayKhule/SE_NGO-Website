@@ -1,0 +1,22 @@
+<div class="widget recent-posts">
+  <h3 class="widget-title">Recent Events</h3>
+  <ul class="list-unstyled">
+      {% for item in site.data.recent %}
+      <li class="d-flex align-items-center">
+      <div class="posts-thumb">
+        <a href="#"><img loading="lazy" alt="img" src="/assets/images/news/Fun1.jpg"></a>
+      </div>
+      <div class="post-info">
+        <h4 class="entry-title">
+          <a href="#">{{item.title}}</a>
+        </h4>
+        <span class="sidebar-meta-date"><i class="far fa-calendar"></i>{{item.date}}</span>
+      </div>
+    </li><!-- 1st post end-->
+    {% endfor %}
+
+    <div class= "calendar-link">
+      <a href= "calendar.html" >View in calendar</a>
+    </div>
+  </ul>            
+</div>
